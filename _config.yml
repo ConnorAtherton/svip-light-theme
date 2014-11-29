@@ -1,9 +1,7 @@
 menu:
-  Home: /
   Archives: /archives
-  About: /about
 
-widgets: 
+widgets:
 - search
 - category
 - tag
@@ -12,10 +10,10 @@ widgets:
 excerpt_link:
 
 github:
-  username:  
+  username:
 
 twitter:
-  username: 
+  username: SVIP
   show_replies: false
   tweet_count: 5
 

@@ -5,4 +5,14 @@
   &copy; <%= new Date().getFullYear() %> <%= config.title %>
   <% } %>
 </div>
+<div class="alignRight">
+  <nav id="footer-nav">
+    <ul>
+      <% for (var i in theme.menu){ %>
+        <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+      <% } %>
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+</div>
 <div class="clearfix"></div>

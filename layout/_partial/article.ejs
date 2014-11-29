@@ -7,7 +7,9 @@
       <%- partial('post/title') %>
       <% if (item.layout != 'page'){ %>
         <p class="published">
-          Published: <time datetime="<%= item.date.toDate().toISOString() %>"><%= item.date.format(config.date_format) %></time>
+          <time datetime="<%= item.date.toDate().toISOString() %>"><%= item.date.format(config.date_format) %></time>
+           |
+          <span class="author"><%= item.author %></span>
         </p>
       <% } %>
     </header>

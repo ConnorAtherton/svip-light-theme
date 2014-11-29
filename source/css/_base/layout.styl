@@ -5,19 +5,23 @@
 body
   background color-background
   color color-font
-  font-family font-default
-  font-size 14px
-  text-shadow 0 0 1px transparent
-  @media screen and (max-width: 1260px)
-    margin 0 30px
+  font-family font-serif
+  font-size 16px
+  text-shadow 10 0 1px transparent
+  border-top 5px solid accent-color
   @media screen and (max-width: 600px)
     font-size 13px
 
 h1, h2, h3, h4, h5, h6
   font-family font-title
+  font-weight 900
+  a
+   text-decoration none
 
 h1
-  font-size 1.8em
+  font-size 2.6em
+  letter-spacing -1px
+  text-indent -2x
 
 h2
   font-size 1.5em
@@ -30,6 +34,12 @@ a
   color color-link
   &:hover
     text-decoration underline
+p
+  margin-bottom 1.75em
+  letter-spacing 0.01rem
+  font-size 1.2em
+  text-align left
+  font-weight 300
 
 .alignleft
   float left
@@ -54,9 +64,3 @@ a
   @media screen and (max-width: 900px)
     margin-right 0
     float none
-
-#wrapper
-  @media screen and (max-width: 1260px)
-    margin-right 300px
-  @media screen and (max-width: 900px)
-    margin-right 0
